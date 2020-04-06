@@ -1,0 +1,86 @@
+.license-plan {
+    width: 370px;
+    height: 380px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border: 8px solid #ebebeb;
+    &__radio-item { 
+        padding: 5px 10px;
+        position: relative;
+       
+        height: 45px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        &:hover {
+            background-color: #ebf4f7;
+            border: 1px solid #bfdbe4;
+            .license-plan__check {
+                border-color: #34648e;
+
+            }
+        }
+    }
+    &__label {
+        font-family: "Bebas";  
+        font-weight: bold;        
+        font-size: 16px;
+        line-height: 22px;
+        color: #7c7c7c;     
+    }
+    &__cost {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        font-family: Arial; 
+        font-weight: normal;
+        font-size: 12px;  
+        color: #8c8d8e;
+    }
+    &__radio {
+        &:checked,
+        &:not(:checked) {
+            position: absolute;
+            left: -9999px;
+        }
+        &:checked + label,
+        &:not(:checked) + label {
+            position: relative;
+            padding-left: 28px;
+            cursor: pointer;
+        }
+        &:checked + label:before,
+        &:not(:checked) + label:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #dadada;
+            border-radius: 100%;
+            background: #fbfbfb;
+        }
+        &:checked + label:after,
+        &:not(:checked) + label:after {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: #0294bf;
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            border-radius: 100%;
+            transition: all 0.2s ease;
+        }
+        &:not(:checked) + label:after {
+            opacity: 0;
+            transform: scale(0);
+        }
+        &:checked + label:after {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+}

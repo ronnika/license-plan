@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="license-plan">
+            <form action="POST" class="license-plan__inner">
+                <div class="license-plan__radio-item">
+                    <input class="license-plan__radio" type="radio" id="plan-1" name="plan" value="13">
+                   
+                    <label class="license-plan__label" for="plan-1">Licence plan#1</label>
+                    <span class="license-plan__cost">$13 per license</span>
+                </div>
+                <div class="license-plan__radio-item">
+                    
+                    <input class="license-plan__radio"  type="radio" id="plan-2" name="plan" value="22">
+                    <label class="license-plan__label" for="plan-2">Licence plan#2</label>
+                    <span class="license-plan__cost">$22 per license</span>
+                </div>
+                <div class="license-plan__radio-item">
+                    
+                    <input class="license-plan__radio"  type="radio" id="plan-3" name="plan" value="34">
+                    <label class="license-plan__label" for="plan-3">Licence plan#3</label>
+                    <span class="license-plan__cost">$34 per license</span>
+                </div>
+
+                <label for="quantity">Number of licenses:</label>
+                <select class="license-plan__select" name="quantity" id="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                <div class="license-plan__total">
+                    Total:<span class="license-plan__total_sum">$<span class="license-plan__total_num">340</span><span class="license-plan__total_us">US</span><span>
+                </div>
+                <button type="submit">Buy now</button>
+                <div class="license-plan__selected-plan">Selected plan: #<span class="license-plan__selected-plan_num">3</span></div>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
