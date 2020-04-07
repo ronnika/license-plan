@@ -22,7 +22,6 @@ $(document).ready(function () {
               }
             $("#license-plan__total_num").text(cost*quant);
         })        
-    })
-    
+    })   
 
   });
