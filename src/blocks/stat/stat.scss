@@ -1,11 +1,12 @@
 .stat {
-    width: 365px;
-    height: 460px;    
+    width: 380px;
+    height: 560px;    
     position: relative;
     background-color: #fdfdfd;
     border: 8px solid #ebebeb;
     font-family: Arial, Helvetica, sans-serif;    
     font-size: 12px;
+    line-height: 1;
     color: #4a4a4a;
     &__inner {
         width: 100%;
@@ -15,17 +16,18 @@
     &__table {
         margin-top: 30px;
         text-align: center;
-        width: 380px;
-        
+        width: 380px;        
         background-color: #ffffff;
         border-spacing: 2px;
     }
-    &__cell {
-        
+    &__cell {        
         padding: 0 10px;
         background-color: #fcfcfc;
-        height: 30px;
-        border: 1px solid #ffffff;
+        height: 25px;
+        border: 1px solid #ffffff;    
+        &_graph {
+            background-color: #ffffff;
+        }
         &_selected {
             background-color: #edfaff;
         }
@@ -81,6 +83,7 @@
     }
 
     &__header {
+        height: 25px;
         font-weight: normal;
         &_top {
             font-size: 11px;
@@ -93,6 +96,10 @@
         &_selected {
             background-color: #edfaff;
         }
+    }
+    &__line-chart {
+        width: 290px;
+        height: 130px;
     }
 
 }

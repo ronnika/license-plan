@@ -73,6 +73,11 @@
                       <td class="stat__cell ">480 521 <span class="stat__percent stat__percent_down">-4%</span></td>
                       <td class="stat__cell">480 521</td>
                     </tr>
+                    <tr class="stat__row">  
+                      <td class="stat__cell stat__cell_graph" colspan="4">
+                        <div class="stat__line-chart"><canvas  id="line-chart"  height="130px"></canvas></div>
+                      </td>
+                    </tr>
                     <tr class="stat__row">
                       <th class="stat__header stat__header_left">Наличные</th>
                       <td class="stat__cell stat__cell_selected">300 000</td>
@@ -95,7 +100,7 @@
                         <th class="stat__header stat__header_left">Средний чек, руб</th>
                         <td class="stat__cell stat__cell_selected">1300</td>
                         <td class="stat__cell stat__cell_up">900 <span class="stat__percent stat__percent_up">+44%</span></td>
-                        <td class="stat__cell stat__cell_up">900 521</td>
+                        <td class="stat__cell stat__cell_up">900</td>
                       </tr>
                       <tr class="stat__row">
                         <th class="stat__header stat__header_left">Средний гость, руб</th>
@@ -133,7 +138,7 @@
         </div>
     </div>
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./index.js"></script>
 </body>
