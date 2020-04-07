@@ -10,20 +10,20 @@
         <div class="license-plan">
             <form action="POST" class="license-plan__inner">
                 <div class="license-plan__radio-item">
-                    <input class="license-plan__radio" type="radio" id="plan-1" name="plan" value="13">
+                    <input class="license-plan__radio" type="radio" id="plan-1" name="plan" value="1">
                    
                     <label class="license-plan__label" for="plan-1">Licence plan#1</label>
                     <span class="license-plan__cost">$13 per license</span>
                 </div>
                 <div class="license-plan__radio-item">
                     
-                    <input class="license-plan__radio"  type="radio" id="plan-2" name="plan" value="22">
+                    <input class="license-plan__radio"  type="radio" id="plan-2" name="plan" value="2">
                     <label class="license-plan__label" for="plan-2">Licence plan#2</label>
                     <span class="license-plan__cost">$22 per license</span>
                 </div>
                 <div class="license-plan__radio-item">
                     
-                    <input class="license-plan__radio"  type="radio" id="plan-3" name="plan" value="34">
+                    <input class="license-plan__radio"  type="radio" id="plan-3" name="plan" value="3">
                     <label class="license-plan__label" for="plan-3">Licence plan#3</label>
                     <span class="license-plan__cost">$34 per license</span>
                 </div>
@@ -46,12 +46,12 @@
                     Total: <span class="license-plan__total_sum">$<span class="license-plan__total_num">340</span><span class="license-plan__total_us">US</span><span>
                 </div>
                 <button class="license-plan__submit" type="submit">Buy now</button>
-                <div class="license-plan__selected-plan">Selected plan: #<span class="license-plan__selected-plan_num">3</span></div>
+                <div class="license-plan__selected-plan">Selected plan: #<span id="license-plan__num"></span></div>
             </form>
         </div>
     </div>
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./index.js"></script>
 </body>
 </html>
