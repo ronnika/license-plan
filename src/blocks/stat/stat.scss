@@ -1,5 +1,5 @@
 .stat {
-    width: 360px;
+    width: 365px;
     height: 460px;    
     position: relative;
     background-color: #fdfdfd;
@@ -21,6 +21,7 @@
         border-spacing: 2px;
     }
     &__cell {
+        
         padding: 0 10px;
         background-color: #fcfcfc;
         height: 30px;
@@ -35,6 +36,16 @@
         &_down{
             background: rgb(249,226,223);
             background: linear-gradient(180deg, rgba(249,226,223,1) 0%, rgba(241,215,211,1) 100%);
+        }
+    }
+    &__percent {
+        float: right;
+        margin-left: 5px;
+        &_up {
+            color: #5f7a48;
+        }
+        &_down {
+            color: #bd6a6f;
         }
     }
     &__row {
