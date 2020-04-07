@@ -50,49 +50,83 @@
             </form>
         </div>
         <div class="stat">
-            <div class="stat__header">
+            <div class="stat__top">
                 <div class="stat__title">Общая статистика</div>
                 <div class="stat__controls">
                     1 2 3
                 </div>
             </div>
-            <table class="stat__table">
-                <tr>
-                  <th>1</th>
-                  <th>2</th>
-                  <th>3</th>
-                  <th>4</th>
-                  <th>5</th>
-                </tr>
-                <tr>
-                  <th>2</th>
-                  <td>4</td>
-                  <td>6</td>
-                  <td>8</td>
-                  <td>10</td>
-                </tr>
-                <tr>
-                  <th>3</th>
-                  <td>6</td>
-                  <td>9</td>
-                  <td>12</td>
-                  <td>15</td>
-                </tr>
-                <tr>
-                  <th>4</th>
-                  <td>8</td>
-                  <td>12</td>
-                  <td>16</td>
-                  <td>20</td>
-                </tr>
-                <tr>
-                  <th>5</th>
-                  <td>10</td>
-                  <td>15</td>
-                  <td>20</td>
-                  <td>25</td>
-                </tr>
-              </table>
+            <div class="stat__inner">
+                <table class="stat__table">
+                    <tr class="stat__row">
+                      <th class="stat__header stat__header_top">Показатель</th>
+                      <th class="stat__header stat__header_top stat__header_selected">Текущий день</th>
+                      <th class="stat__header stat__header_top">Вчера</th>
+                      <th class="stat__header stat__header_top">Этот день<br>недели</th>
+                    </tr>
+                    <tr class="stat__row">
+                      <th class="stat__header stat__header_left">Выручка, руб</th>
+                      <td class="stat__cell stat__cell_selected">500 521</td>
+                      <td class="stat__cell ">480 521 <span class="stat__percent_down">-4%</span></td>
+                      <td class="stat__cell">480 521</td>
+                    </tr>
+                    <tr class="stat__row">
+                      <th class="stat__header stat__header_left">Наличные</th>
+                      <td class="stat__cell stat__cell_selected">300 000</td>
+                      <td class="stat__cell">300 000 <span class="stat__percent_down">-3%</span></td>
+                      <td class="stat__cell">300 000</tdclass="stat__cell">
+                    </tr>
+                    <tr class="stat__row">
+                      <th class="stat__header stat__header_left">Безналичный</th>
+                      <td class="stat__cell stat__cell_selected">100 000</td>
+                      <td class="stat__cell">100 000 <span class="stat__percent_down">-3%</span></td>
+                      <td class="stat__cell">100 000</td>
+                    </tr>
+                    <tr class="stat__row">
+                      <th class="stat__header stat__header_left">Кредитные карты</th>
+                      <td class="stat__cell stat__cell_selected">100 521</td>
+                      <td class="stat__cell">100 521 <span class="stat__percent_down">-3%</span></td>
+                      <td class="stat__cell">100 521</td>
+                    </tr>
+                    <tr class="stat__row">
+                        <th class="stat__header stat__header_left">Средний чек, руб</th>
+                        <td class="stat__cell stat__cell_selected">1300</td>
+                        <td class="stat__cell stat__cell_up">900 <span class="stat__percent_uo">+44%</span></td>
+                        <td class="stat__cell stat__cell_up">900 521</td>
+                      </tr>
+                      <tr class="stat__row">
+                        <th class="stat__header stat__header_left">Средний гость, руб</th>
+                        <td class="stat__cell stat__cell_selected">1200</td>
+                        <td class="stat__cell stat__cell_up">800 <span class="stat__percent_up">+45%</span></td>
+                        <td class="stat__cell stat__cell_up">800</td>
+                      </tr>
+                      <tr class="stat__row">
+                        <th class="stat__header stat__header_left">Удаления из чека<br>(после оплаты), руб</th>
+                        <td class="stat__cell stat__cell_selected">1000</td>
+                        <td class="stat__cell stat__cell_down">1100 <span class="stat__percent_down">-10%</span></td>
+                        <td class="stat__cell stat__cell_up">900</td>
+                      </tr>
+                      <tr class="stat__row">
+                        <th class="stat__header stat__header_left">Удаления из чека<br>(до оплаты), руб</th>
+                        <td class="stat__cell stat__cell_selected">1300</td>
+                        <td class="stat__cell">1300 <span class="stat__percent_down">-7%</span></td>
+                        <td class="stat__cell stat__cell_up">900</td>
+                      </tr>
+                      <tr class="stat__row">
+                        <th class="stat__header stat__header_left">Количество чеков</th>
+                        <td class="stat__cell stat__cell_selected">34</td>
+                        <td class="stat__cell">36 <span class="stat__percent_down">-10%</span></td>
+                        <td class="stat__cell">34</td>
+                      </tr>
+                      <tr class="stat__row">
+                        <th class="stat__header stat__header_left">Количество гостей</th>
+                        <td class="stat__cell stat__cell_selected">34</td>
+                        <td class="stat__cell">36 <span class="stat__percent_down">-10%</span></td>
+                        <td class="stat__cell">32</td>
+                      </tr>
+                  </table>
+            </div>
+            
         </div>
     </div>
 
